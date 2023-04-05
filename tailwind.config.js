@@ -9,7 +9,9 @@ module.exports = {
       black: '#000',
       'gray-light': '#6e767d',
       'gray-medium': '#2f3336',
-      'gray-dark': '#15181c'
+      'gray-dark': '#15181c',
+      current: 'currentColor',
+      transparent: 'transparent'
     }
   },
   plugins: []

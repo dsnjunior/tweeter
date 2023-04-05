@@ -3,7 +3,7 @@
     "next/core-web-vitals",
     "plugin:jsx-a11y/recommended",
     "plugin:tailwindcss/recommended",
-    "eslint-config-prettier",
-    "plugin:storybook/recommended"
+    "plugin:storybook/recommended",
+    "eslint-config-prettier"
   ]
 }
