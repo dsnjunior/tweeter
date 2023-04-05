@@ -10,16 +10,16 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 16
-      - name: ⏬ install dependencies
+      - name: Install dependencies
         run: yarn install
 
-      - name: 🧪 run tests
+      - name: Run tests
         run: yarn test
 
-      - name: 🧹 run lint
+      - name: Run lint
         run: yarn lint
 
-      - name: 🆕 publish Storybook and run visual tests
+      - name: Publish Storybook and run visual tests
         uses: chromaui/action@v1
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
