@@ -15,8 +15,8 @@ const classesByVariant = {
 };
 
 const classesBySize = {
-  medium: 'text-xs',
-  large: 'text-sm'
+  medium: 'text-xs py-2',
+  large: 'text-sm py-4'
 };
 
 export function Button({ label, variant = 'filled', size = 'medium', disabled, fullWidth, onClick }: ButtonProps) {
@@ -26,7 +26,7 @@ export function Button({ label, variant = 'filled', size = 'medium', disabled, f
   return (
     <button
       className={clsx(
-        'rounded-full border border-brand px-6 py-2 font-semibold text-brand hover:opacity-80',
+        'rounded-full border border-brand px-6 font-semibold text-brand hover:opacity-80',
         variantClasses,
         sizeClasses,
         {
