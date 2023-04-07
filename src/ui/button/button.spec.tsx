@@ -112,15 +112,15 @@ describe('<Button />', () => {
 
   describe('a11y', () => {
     it('has no a11y violations', async () => {
-      const { container } = render(<Button label="Label" />);
+      render(<Button label="Label" />);
 
-      expect(await axe(container)).toHaveNoViolations();
+      expect(await axe(await screen.findByRole('button'))).toHaveNoViolations();
     });
 
     it('has no a11y violations when disabled', async () => {
-      const { container } = render(<Button label="Label" disabled />);
+      render(<Button label="Label" disabled />);
 
-      expect(await axe(container)).toHaveNoViolations();
+      expect(await axe(await screen.findByRole('button'))).toHaveNoViolations();
     });
   });
 });

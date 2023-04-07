@@ -24,9 +24,9 @@ describe('<Menu />', () => {
 
   describe('a11y', () => {
     it('has no a11y violations', async () => {
-      const { container } = render(<Menu />);
+      render(<Menu />);
 
-      expect(await axe(container)).toHaveNoViolations();
+      expect(await axe((await screen.findByRole('navigation')).parentElement!)).toHaveNoViolations();
     });
   });
 });
