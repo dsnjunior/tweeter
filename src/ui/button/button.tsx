@@ -25,15 +25,11 @@ export function Button({ label, variant = 'filled', size = 'medium', disabled, f
 
   return (
     <button
-      className={clsx(
-        'rounded-full border border-brand px-6 font-semibold text-brand hover:opacity-80',
-        variantClasses,
-        sizeClasses,
-        {
-          'opacity-50 hover:opacity-50': disabled,
-          'w-full': fullWidth
-        }
-      )}
+      className={clsx('rounded-full border border-brand px-6 font-semibold text-brand', variantClasses, sizeClasses, {
+        'opacity-50': disabled,
+        'hover:opacity-80': !disabled,
+        'w-full': fullWidth
+      })}
       disabled={disabled}
       onClick={onClick}
     >
