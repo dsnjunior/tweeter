@@ -69,7 +69,8 @@ describe('<Button />', () => {
 
       const button = screen.getByRole('button');
 
-      expect(button).toHaveClass('opacity-50 hover:opacity-50');
+      expect(button).toHaveClass('opacity-50');
+      expect(button).not.toHaveClass('hover:opacity-80');
       expect(button).toBeDisabled();
     });
   });
