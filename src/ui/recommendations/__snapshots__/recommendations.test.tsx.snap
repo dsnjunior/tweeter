@@ -1,0 +1,166 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Recommendations /> should render correctly 1`] = `
+<aside
+  aria-label="Recommendations to follow"
+  class="rounded-2xl bg-gray-dark text-white"
+>
+  <h1
+    class="p-4 text-xl font-black"
+  >
+    Who to Follow
+  </h1>
+  <ul>
+    <li
+      class="border-t border-gray-medium p-4"
+    >
+      <a
+        aria-label="Follow @leo"
+        class="flex"
+        href="@leo"
+        title="Leo - @leo"
+      >
+        <div
+          class="shrink-0"
+        >
+          <img
+            alt="Leo's profile photo"
+            class="h-10 w-10 rounded-full"
+            data-nimg="1"
+            decoding="async"
+            height="40"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style="color: transparent;"
+            width="40"
+          />
+        </div>
+        <div
+          class="mx-2 w-full overflow-hidden text-sm"
+        >
+          <div
+            class="w-full truncate font-semibold"
+          >
+            Leo
+          </div>
+          <div
+            class="w-full truncate text-gray-light"
+          >
+            @leo
+          </div>
+        </div>
+        <div
+          class="shrink-0"
+        >
+          <button
+            class="rounded-full border border-brand px-6 font-semibold text-brand bg-transparent text-brand text-xs py-2 hover:opacity-80"
+          >
+            Follow
+          </button>
+        </div>
+      </a>
+    </li>
+    <li
+      class="border-t border-gray-medium p-4"
+    >
+      <a
+        aria-label="Follow @leonardo"
+        class="flex"
+        href="@leonardo"
+        title="Leonardo - @leonardo"
+      >
+        <div
+          class="shrink-0"
+        >
+          <img
+            alt="Leonardo's profile photo"
+            class="h-10 w-10 rounded-full"
+            data-nimg="1"
+            decoding="async"
+            height="40"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style="color: transparent;"
+            width="40"
+          />
+        </div>
+        <div
+          class="mx-2 w-full overflow-hidden text-sm"
+        >
+          <div
+            class="w-full truncate font-semibold"
+          >
+            Leonardo
+          </div>
+          <div
+            class="w-full truncate text-gray-light"
+          >
+            @leonardo
+          </div>
+        </div>
+        <div
+          class="shrink-0"
+        >
+          <button
+            class="rounded-full border border-brand px-6 font-semibold text-brand bg-transparent text-brand text-xs py-2 hover:opacity-80"
+          >
+            Follow
+          </button>
+        </div>
+      </a>
+    </li>
+    <li
+      class="border-t border-gray-medium p-4"
+    >
+      <a
+        aria-label="Follow @leo_pinheiro"
+        class="flex"
+        href="@leo_pinheiro"
+        title="Leo Pinheiro - @leo_pinheiro"
+      >
+        <div
+          class="shrink-0"
+        >
+          <img
+            alt="Leo Pinheiro's profile photo"
+            class="h-10 w-10 rounded-full"
+            data-nimg="1"
+            decoding="async"
+            height="40"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style="color: transparent;"
+            width="40"
+          />
+        </div>
+        <div
+          class="mx-2 w-full overflow-hidden text-sm"
+        >
+          <div
+            class="w-full truncate font-semibold"
+          >
+            Leo Pinheiro
+          </div>
+          <div
+            class="w-full truncate text-gray-light"
+          >
+            @leo_pinheiro
+          </div>
+        </div>
+        <div
+          class="shrink-0"
+        >
+          <button
+            class="rounded-full border border-brand px-6 font-semibold text-brand bg-transparent text-brand text-xs py-2 hover:opacity-80"
+          >
+            Follow
+          </button>
+        </div>
+      </a>
+    </li>
+  </ul>
+</aside>
+`;
