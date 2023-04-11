@@ -1,0 +1,156 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<News /> should render correctly 1`] = `
+<aside
+  aria-label="Trending topics"
+  class="rounded-2xl bg-gray-dark text-white"
+>
+  <h1
+    class="p-4 text-xl font-black"
+  >
+    What's happening
+  </h1>
+  <ul>
+    <li
+      class="border-t border-gray-medium p-4"
+    >
+      <a
+        aria-label="For the time being, the legendary football star has declared his retirement from his present team."
+        class="text-sm"
+        href="/thread"
+      >
+        <div
+          class="flex"
+        >
+          <div>
+            <div
+              class="mb-1 text-gray-light"
+            >
+              Football
+            </div>
+            <h2
+              class="mb-1 font-semibold"
+            >
+              For the time being, the legendary football star has declared his retirement from his present team.
+            </h2>
+          </div>
+          <div
+            class="ml-auto h-16 w-[4.5rem] shrink-0 pl-2"
+          >
+            <img
+              alt="For the time being, the legendary football star has declared his retirement from his present team. trend thumbnail"
+              class="h-full w-full rounded-lg object-cover"
+              data-nimg="1"
+              decoding="async"
+              height="40"
+              loading="lazy"
+              src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+              style="color: transparent;"
+              width="40"
+            />
+          </div>
+        </div>
+        <div
+          class="text-gray-light"
+        >
+          Trending in 
+          <span
+            class="font-medium text-brand hover:underline"
+          >
+            #Football
+          </span>
+        </div>
+      </a>
+    </li>
+    <li
+      class="border-t border-gray-medium p-4"
+    >
+      <a
+        aria-label="We don't have time to mock all of these texts right now."
+        class="text-sm"
+        href="/thread-1"
+      >
+        <div
+          class="flex"
+        >
+          <div>
+            <div
+              class="mb-1 text-gray-light"
+            >
+              Entertainment
+            </div>
+            <h2
+              class="mb-1 font-semibold"
+            >
+              We don't have time to mock all of these texts right now.
+            </h2>
+          </div>
+        </div>
+        <div
+          class="text-gray-light"
+        >
+          Trending in 
+          <span
+            class="font-medium text-brand hover:underline"
+          >
+            #Testing
+          </span>
+        </div>
+      </a>
+    </li>
+    <li
+      class="border-t border-gray-medium p-4"
+    >
+      <a
+        aria-label="Yet we are still doing our best."
+        class="text-sm"
+        href="/thread-2"
+      >
+        <div
+          class="flex"
+        >
+          <div>
+            <div
+              class="mb-1 text-gray-light"
+            >
+              Programming
+            </div>
+            <h2
+              class="mb-1 font-semibold"
+            >
+              Yet we are still doing our best.
+            </h2>
+          </div>
+          <div
+            class="ml-auto h-16 w-[4.5rem] shrink-0 pl-2"
+          >
+            <img
+              alt="Yet we are still doing our best. trend thumbnail"
+              class="h-full w-full rounded-lg object-cover"
+              data-nimg="1"
+              decoding="async"
+              height="40"
+              loading="lazy"
+              src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+              style="color: transparent;"
+              width="40"
+            />
+          </div>
+        </div>
+        <div
+          class="text-gray-light"
+        >
+          Trending in 
+          <span
+            class="font-medium text-brand hover:underline"
+          >
+            #React
+          </span>
+        </div>
+      </a>
+    </li>
+  </ul>
+</aside>
+`;
