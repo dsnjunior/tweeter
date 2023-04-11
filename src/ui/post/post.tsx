@@ -40,7 +40,7 @@ export function Post({ data, onComment, onRePost, onLike, onShare }: PostProps) 
       </div>
       <div>
         <Link href={`/${author.username}`} className="text-sm font-semibold">
-          {author.name} <span className="font-normal text-gray-light hover:underline">@{author.username}</span>
+          {author.name} <span className="font-normal text-gray-light hover:underline">{author.username}</span>
         </Link>
         <span className="text-gray-light"> • </span>
         <Link href="/post-url" className="text-sm text-gray-light hover:underline">

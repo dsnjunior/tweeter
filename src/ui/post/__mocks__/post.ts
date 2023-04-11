@@ -6,7 +6,7 @@ export const mockedPostWithoutImage: PostProps = {
   data: {
     author: {
       name: 'Leo',
-      username: 'leo',
+      username: '@leo',
       avatar: {
         src: mockedImage,
         alt: 'Leo`s avatar',

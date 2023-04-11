@@ -23,15 +23,14 @@ exports[`<Post /> when post has no image should render correctly 1`] = `
   <div>
     <a
       class="text-sm font-semibold"
-      href="/leo"
+      href="/@leo"
     >
       Leo
        
       <span
         class="font-normal text-gray-light hover:underline"
       >
-        @
-        leo
+        @leo
       </span>
     </a>
     <span
