@@ -57,7 +57,7 @@ const items = [
 
 export function Menu() {
   return (
-    <div className="bg-black text-white">
+    <div className="bg-black text-white @container">
       <nav>
         <Link href="/" aria-label="Tweeter" className="block w-fit p-4 leading-none hover:text-brand">
           <BrandIcon />
@@ -67,13 +67,13 @@ export function Menu() {
             <li key={href}>
               <Link href={href} className="flex items-center p-4 hover:text-brand">
                 <span>{icon}</span>
-                <span className="ml-2 text-sm font-semibold">{label}</span>
+                <span className="ml-2 hidden text-sm font-semibold @[110px]:block">{label}</span>
               </Link>
             </li>
           ))}
         </ul>
       </nav>
-      <div className="mt-4">
+      <div className="mt-4 hidden @[110px]:block">
         <Button label="Tweet" size="large" fullWidth />
       </div>
     </div>

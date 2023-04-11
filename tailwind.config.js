@@ -12,7 +12,14 @@ module.exports = {
       'gray-dark': '#15181c',
       current: 'currentColor',
       transparent: 'transparent'
+    },
+    screens: {
+      sm: '660px',
+      md: '882px',
+      lg: '1024px',
+      xl: '1280px',
+      '2xl': '1536px'
     }
   },
-  plugins: []
+  plugins: [require('@tailwindcss/container-queries')]
 };

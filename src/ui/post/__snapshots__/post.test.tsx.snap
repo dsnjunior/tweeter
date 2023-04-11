@@ -47,7 +47,7 @@ exports[`<Post /> when post has no image should render correctly 1`] = `
     <p
       class="text-sm"
     >
-      Life Update : I’m joining a new company today. Honored to have worked with amazing people. Hope I don’t go back. Yay!
+      Life Update: I’m joining CR Vasco da Gama today. Honored to have worked with amazing people at Sao Paulo FC. Hope I don’t go back. Yay!
     </p>
     <div
       class="mt-4 flex items-center justify-between text-gray-light"

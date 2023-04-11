@@ -13,7 +13,7 @@ export const mockedPostWithoutImage: PostProps = {
       },
     },
     timeAgo: '10 min',
-    content: 'Life Update : I’m joining a new company today. Honored to have worked with amazing people. Hope I don’t go back. Yay!',
+    content: 'Life Update: I’m joining CR Vasco da Gama today. Honored to have worked with amazing people at Sao Paulo FC. Hope I don’t go back. Yay!',
     images: [],
     comments: '124',
     rePosts: '30',
