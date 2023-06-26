@@ -1,18 +1,20 @@
-import { SearchIcon } from './icons';
+"use client";
 
-export type SearchBarProps = {
-  onSubmit: (searchValue: string) => void;
-};
+import { SearchIcon } from "./icons";
 
-export function SearchBar({ onSubmit }: SearchBarProps) {
+export type SearchBarProps = {};
+
+export function SearchBar({}: SearchBarProps) {
   function submitForm(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
     const form = event.target as HTMLFormElement;
-    const textElement = form.elements.namedItem('search') as HTMLInputElement;
+    const textElement = form.elements.namedItem("search") as HTMLInputElement;
     const searchValue = textElement.value;
 
-    onSubmit(searchValue);
+    console.log({ searchValue });
+
+    // onSubmit(searchValue);
   }
 
   return (
