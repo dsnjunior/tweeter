@@ -55,14 +55,14 @@ export function Post({ data }: PostProps) {
       <div>
         <Link href={`/${author.username}`} className="text-sm font-semibold">
           {author.name}{" "}
-          <span className="font-normal text-gray-light hover:underline">
+          <span className="font-normal text-gray-light underline-offset-4 hover:underline">
             {author.username}
           </span>
         </Link>
         <span className="text-gray-light"> • </span>
         <Link
           href="/post-url"
-          className="text-sm text-gray-light hover:underline"
+          className="text-sm text-gray-light underline-offset-4 hover:underline"
         >
           {timeAgo}
         </Link>

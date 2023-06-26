@@ -1,24 +1,18 @@
-'use client';
+import { CreatePostForm } from "@/components/create-post-form";
+import { Post } from "@/components/ui/post";
+import { mockedPostWithoutImage } from "@/components/ui/post/__mocks__/post";
+import { Menu } from "@/components/ui/menu";
+import { SearchBar } from "@/components/ui/search-bar";
+import { News } from "@/components/ui/news";
+import { mockedNews } from "@/components/ui/news/__mocks__/news";
+import { Recommendations } from "@/components/ui/recommendations";
+import { mockedRecommendations } from "@/components/ui/recommendations/__mocks__/recommendations";
+import { getCurrentUser } from "@/server/session";
+import { Avatar } from "@/components/ui/avatar";
 
-import { Form } from 'ui/form';
-import { mockedForm } from 'ui/form/__mocks__/form';
-import { Post } from 'ui/post';
-import {
-  mockedPostWithoutImage,
-  mockedPostWithOneImage,
-  mockedPostWithTwoImages,
-  mockedPostWithThreeImages,
-  mockedPostWithFourImages,
-  mockedPostWithFiveImages
-} from 'ui/post/__mocks__/post';
-import { Menu } from 'ui/menu';
-import { SearchBar } from 'ui/search-bar';
-import { News } from 'ui/news';
-import { mockedNews } from 'ui/news/__mocks__/news';
-import { Recommendations } from 'ui/recommendations';
-import { mockedRecommendations } from 'ui/recommendations/__mocks__/recommendations';
+export default async function Home() {
+  const user = await getCurrentUser();
 
-export default function Home() {
   return (
     <main className="min-h-full bg-black">
       <div className="grid justify-center gap-6 sm:grid-cols-[56px_minmax(510px,100%)] sm:px-4 md:grid-cols-[56px_510px_240px] lg:grid-cols-[56px_510px_336px] xl:grid-cols-[224px_510px_336px]">
@@ -27,18 +21,19 @@ export default function Home() {
             <Menu />
           </div>
         </div>
-        <div className="grid gap-px border-x border-gray-medium bg-gray-medium">
-          <Form {...mockedForm} />
-          <Post {...mockedPostWithoutImage} />
-          <Post {...mockedPostWithOneImage} />
-          <Post {...mockedPostWithTwoImages} />
-          <Post {...mockedPostWithThreeImages} />
-          <Post {...mockedPostWithFourImages} />
-          <Post {...mockedPostWithFiveImages} />
+        <div className="min-h-full border-x border-gray-medium">
+          {user && (
+            <CreatePostForm
+              avatar={<Avatar alt={user.name ?? ""} src={user.image ?? ""} />}
+            />
+          )}
+          <div className="border-t border-gray-medium last:border-b">
+            <Post {...mockedPostWithoutImage} />
+          </div>
         </div>
         <div className="hidden self-stretch md:block">
           <div className="sticky top-4 grid gap-4 pb-2">
-            <SearchBar onSubmit={() => null} />
+            <SearchBar />
             <News {...mockedNews} />
             <Recommendations {...mockedRecommendations} />
           </div>

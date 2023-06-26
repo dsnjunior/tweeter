@@ -1,14 +1,14 @@
-import Image, { ImageProps } from 'next/image';
-import Link from 'next/link';
+import Image, { ImageProps } from "next/image";
+import Link from "next/link";
 
-import { SideBlock } from '../side-block';
+import { SideBlock } from "../side-block";
 
 type Trend = {
   href: string;
   category: string;
   title: string;
   trendingIn: string;
-  image?: ImageProps['src'];
+  image?: ImageProps["src"];
 };
 
 export type NewsProps = {
@@ -37,7 +37,10 @@ export function News({ trends }: NewsProps) {
             )}
           </div>
           <div className="text-gray-light">
-            Trending in <span className="font-medium text-brand hover:underline">{trendingIn}</span>
+            Trending in{" "}
+            <span className="font-medium text-brand underline-offset-4 hover:underline">
+              {trendingIn}
+            </span>
           </div>
         </Link>
       ))}
